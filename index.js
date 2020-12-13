@@ -24,8 +24,8 @@ bot.on('message', msg => {
     } else {
       msg.reply('Please tag a valid user!');
     }
-  } else if (message.content === '!server') {
-    message.channel.send(`This server's name is: ${message.guild.name}`);
+  } else if (msg.content === '!server') {
+    msg.channel.send(`This server's name is: ${msg.guild.name}`);
   } else if (msg.content === 'Who is the boss') {
     msg.reply('is the boss');
   }
