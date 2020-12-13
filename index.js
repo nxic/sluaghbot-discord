@@ -26,7 +26,7 @@ bot.on('message', msg => {
     msg.channel.send(`This server's name is: ${msg.guild.name}`);
   } else if (msg.content === 'Who is the boss') {
     msg.reply('is the boss');
-  } else if(msg.content === '!botinfo') {
+  } else if(msg.content === '!mybotinfo') {
     msg.reply(JSON.stringify(bot.user));
   }
 });
